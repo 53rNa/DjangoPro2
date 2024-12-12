@@ -1,0 +1,30 @@
+<!--страница магазина-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <nav>
+        <ul>
+            <li><a href="/task3/">Главная</a></li>
+            <li><a href="/task3/shop/">Магазин</a></li>
+            <li><a href="/task3/cart/">Корзина</a></li>
+        </ul>
+    </nav>
+
+    <h2>Наши товары:</h2>
+    <ul>
+        {% for item, price in items.items %}
+            <li>{{ item }} - {{ price }}
+                <button>Купить</button>
+                <button>Подробнее</button></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/task3/"><button>Вернуться на главную страницу</button></a>
+</body>
+</html>

@@ -22,4 +22,8 @@ urlpatterns = [
 
     # Подключаем маршруты приложения task2
     path('task2/', include('task2.urls')),
+
+    # Подключаем маршруты приложения task3
+    path('task3/', include('task3.urls')),
 ]
+
